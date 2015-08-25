@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ngrok', '-g' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.1
+4 silly cache add args [ 'ngrok', null ]
+5 verbose cache add spec ngrok
+6 silly cache add parsed spec { raw: 'ngrok',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'ngrok',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed ngrok@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'ngrok', range: '*', hasData: false }
+11 silly mapToRegistry name ngrok
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/ngrok
+15 verbose addNameRange registry:https://registry.npmjs.org/ngrok not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/ngrok
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 12:58:54 PM
+19 verbose request id 3444946a1fd12e35
+20 http request GET https://registry.npmjs.org/ngrok
+21 http 200 https://registry.npmjs.org/ngrok
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"DLVBHXQNT0D46G1Q3Z2SCC7DN"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '22506',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Tue, 25 Aug 2015 10:58:54 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ams4148-AMS',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1440500334.785416,VS0,VE99',
+22 silly get     vary: 'Accept' } ]
+23 verbose get saving ngrok to /Users/emanuelequinz/.npm/registry.npmjs.org/ngrok/.cache.json
+24 silly addNameRange number 2 { name: 'ngrok', range: '*', hasData: true }
+25 silly addNameRange versions [ 'ngrok',
+25 silly addNameRange   [ '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.1.4',
+25 silly addNameRange     '0.1.5',
+25 silly addNameRange     '0.1.6',
+25 silly addNameRange     '0.1.7',
+25 silly addNameRange     '0.1.8',
+25 silly addNameRange     '0.1.9',
+25 silly addNameRange     '0.1.91',
+25 silly addNameRange     '0.1.92',
+25 silly addNameRange     '0.1.93',
+25 silly addNameRange     '0.1.94',
+25 silly addNameRange     '0.1.95',
+25 silly addNameRange     '0.1.96',
+25 silly addNameRange     '0.1.97',
+25 silly addNameRange     '0.1.98',
+25 silly addNameRange     '0.1.99' ] ]
+26 verbose addNamed ngrok@0.1.99
+27 silly addNamed semver.valid 0.1.99
+28 silly addNamed semver.validRange 0.1.99
+29 silly mapToRegistry name ngrok
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/ngrok
+33 verbose addRemoteTarball https://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz',
+34 verbose addRemoteTarball   'b9fd7007bb4968a23fa90e0ea53e38fecab96435' ]
+35 info retry fetch attempt 1 at 12:58:54 PM
+36 info attempt registry request try #1 at 12:58:54 PM
+37 http fetch GET https://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz
+38 http fetch 200 https://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz
+39 silly fetchAndShaCheck shasum b9fd7007bb4968a23fa90e0ea53e38fecab96435
+40 verbose addTmpTarball /var/folders/ch/9725d10n7pn3m1c2nrxfh44w0000gn/T/npm-5903-3b394c6f/registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for ngrok@0.1.99
+42 silly cache afterAdd ngrok@0.1.99
+43 verbose afterAdd /Users/emanuelequinz/.npm/ngrok/0.1.99/package/package.json not in flight; writing
+44 verbose afterAdd /Users/emanuelequinz/.npm/ngrok/0.1.99/package/package.json written
+45 silly install resolved [ { name: 'ngrok',
+45 silly install resolved     version: '0.1.99',
+45 silly install resolved     description: 'node wrapper for ngrok',
+45 silly install resolved     main: 'index.js',
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'node ./node_modules/mocha/bin/_mocha',
+45 silly install resolved        postinstall: 'node ./postinstall.js',
+45 silly install resolved        postupdate: 'node ./postinstall.js' },
+45 silly install resolved     repository: { type: 'git', url: 'git://github.com/bubenshchykov/ngrok.git' },
+45 silly install resolved     keywords: [ 'ngrok', 'localhost', 'tunneling', 'localtunnel', 'webhook' ],
+45 silly install resolved     author: { name: 'bubenshchykov' },
+45 silly install resolved     license: 'BSD-2-Clause',
+45 silly install resolved     bugs: { url: 'https://github.com/bubenshchykov/ngrok/issues' },
+45 silly install resolved     devDependencies: { mocha: '~1.14.0', chai: '~1.8.1', request: '~2.27.0' },
+45 silly install resolved     dependencies: { 'decompress-zip': '0.1.0' },
+45 silly install resolved     bin: { ngrok: './bin/ngrok' },
+45 silly install resolved     homepage: 'https://github.com/bubenshchykov/ngrok',
+45 silly install resolved     _id: 'ngrok@0.1.99',
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: 'b9fd7007bb4968a23fa90e0ea53e38fecab96435',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz' },
+45 silly install resolved     _from: 'ngrok@*',
+45 silly install resolved     _npmVersion: '1.4.3',
+45 silly install resolved     _npmUser: { name: 'bubenshchykov', email: 'a.bubenshchykov@gmail.com' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     directories: {},
+45 silly install resolved     _shasum: 'b9fd7007bb4968a23fa90e0ea53e38fecab96435',
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/ngrok/-/ngrok-0.1.99.tgz' } ]
+46 info install ngrok@0.1.99 into /usr/local/lib
+47 info installOne ngrok@0.1.99
+48 verbose installOne of ngrok to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/emanuelequinz/.npm/_locks/ngrok-d1c70c9c77ebe6b2.lock for /usr/local/lib/node_modules/ngrok
+50 silly install write writing ngrok 0.1.99 to /usr/local/lib/node_modules/ngrok
+51 silly cache addNamed cb ngrok@0.1.99
+52 verbose unbuild lib/node_modules/ngrok
+53 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ngrok
+54 verbose tar unpack /Users/emanuelequinz/.npm/ngrok/0.1.99/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/ngrok
+56 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ngrok
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 error tar.unpack untar error /Users/emanuelequinz/.npm/ngrok/0.1.99/package.tgz
+59 verbose unlock done using /Users/emanuelequinz/.npm/_locks/ngrok-d1c70c9c77ebe6b2.lock for /usr/local/lib/node_modules/ngrok
+60 verbose fstream_path /usr/local/lib/node_modules/ngrok
+61 verbose fstream_type Directory
+62 verbose fstream_class DirWriter
+63 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ngrok'
+63 verbose stack     at Error (native)
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+64 verbose fstream_stack FSReqWrap.oncomplete (fs.js:99:15)
+65 verbose cwd /Users/emanuelequinz/code/vlrchtlt/yummmy
+66 error Darwin 14.4.0
+67 error argv "node" "/usr/local/bin/npm" "install" "ngrok" "-g"
+68 error node v0.12.1
+69 error npm  v2.5.1
+70 error path /usr/local/lib/node_modules/ngrok
+71 error code EACCES
+72 error errno -13
+73 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ngrok'
+73 error     at Error (native)
+73 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ngrok']
+73 error   errno: -13,
+73 error   code: 'EACCES',
+73 error   path: '/usr/local/lib/node_modules/ngrok',
+73 error   fstream_type: 'Directory',
+73 error   fstream_path: '/usr/local/lib/node_modules/ngrok',
+73 error   fstream_class: 'DirWriter',
+73 error   fstream_stack:
+73 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+73 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+73 error      'FSReqWrap.oncomplete (fs.js:99:15)' ] }
+74 error Please try running this command again as root/Administrator.
+75 verbose exit [ -13, true ]
+76 verbose unbuild lib/node_modules/ngrok
+77 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ngrok
