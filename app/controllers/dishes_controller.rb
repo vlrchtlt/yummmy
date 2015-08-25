@@ -1,10 +1,12 @@
 class DishesController < ApplicationController
+  before_action :set_dish, only: [:show, :edit, :update, :destroy]
+
   def index
-    # TODO LAURENT
+    @dishes = Dish.all
   end
 
   def show
-    # TODO VALERIE
+    @ingredient = Ingredient.new
   end
 
   def new
@@ -25,5 +27,10 @@ class DishesController < ApplicationController
 
   def destroy
     # NEXT WEEK
+  end
+
+  private
+  def set_dish
+  @dish = Dish.find(params[:id])
   end
 end
