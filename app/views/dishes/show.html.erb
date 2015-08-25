@@ -1,2 +1,15 @@
-<h1>Dishes#show</h1>
-<p>Find me in app/views/dishes/show.html.erb</p>
+<div class="container text-center">
+<h2><%= @dish.name%></h2>
+<%= image_tag @dish.picture.url(:large) %>
+<hr>
+<ul class="list-unstyled">
+  <p>Liste des ingrédients</p>
+    <% @dish.ingredients.each do |ingredient|%>
+  <li>
+  <%= ingredient.name %>
+  </li>
+  <% end %>
+</ul>
+  <hr>
+
+</div>
