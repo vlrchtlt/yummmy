@@ -15,6 +15,8 @@ gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'aws-sdk', '< 2.0'
+gem 'paperclip'
 
 group :development, :test do
   gem 'binding_of_caller'
