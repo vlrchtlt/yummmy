@@ -2,7 +2,7 @@ class DishesController < ApplicationController
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
 
   def index
-    # TODO LAURENT
+    @dishes = Dish.all
   end
 
   def show
