@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'orders/show'
 
+  resources :orders
+
   # get 'dishes/index'
 
   # get 'dishes/show'
