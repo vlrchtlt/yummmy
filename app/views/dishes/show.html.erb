@@ -4,14 +4,23 @@
       <div class="card-wrapper row-bg">
         <div class="card row-bg">
           <span class="card-description">
-            <h2>Some stuff</h2>
+            <h2><%= @dish.name%></h2>
           </span>
           <span class="card-text">
-            <h2>Some stuff</h2>
-            <p>Very cool stuff, useful and smart</p>
+            <p><%= @dish.description%></p>
+            <h2>Ingrédients</h2>
+            <p>
+              <ul class="list-unstyled">
+                <% @dish.ingredients.each do |ingredient|%>
+                  <li>
+                    <%= ingredient.name %>
+                  </li>
+                <% end %>
+              </ul>
+            </p>
           </span>
           <span class="card-user">
-            <img src='user.jpg' class="avatar avatar-bordered"/>
+              <%= image_tag User.first.picture, class: "avatar avatar-big avatar-bordered"%>
           </span>
           <a href="#" class="card-link"></a>
         </div>
@@ -21,12 +30,12 @@
     <div class="col-lg-6 col-sm-12">
       <div class="card-wrapper row-bg">
         <div class="card row-bg">
-          <span class="card-description">Popular</span>
+          <span class="card-description text-center"></span>
           <span class="card-text">
-            <%= image_tag @dish.picture.url(:large) %>
+            <%= image_tag @dish.picture.url(:large)%>
           </span>
           <span class="card-user">
-            <img src='user.jpg' class="avatar avatar-bordered"/>
+            <p class="avatar avatar-bordered"><%= @dish.price_per_portion%> €</p>
           </span>
           <a href="#" class="card-link"></a>
         </div>
