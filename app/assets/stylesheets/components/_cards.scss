@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // .card-dish {
 //   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 //   background: $card-bg;
@@ -66,3 +67,23 @@
     }
   }
 }
+=======
+.card-dish {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: $card-bg;
+
+
+
+<div class="card-dish">
+  <h2 class="section-heading"><strong><%= @dish.name%><strong></h2>
+  <p><%= @dish.description%></p>
+  <p>Liste des ingrédients</p>
+  <ul> <!-- class="list-unstyled" -->
+      <% @dish.ingredients.each do |ingredient|%>
+    <li>
+    <%= ingredient.name %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+>>>>>>> 8a6df576302f28c7dbfd1f68419ba38ce4881b48
