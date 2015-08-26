@@ -7,42 +7,43 @@
       <div class="row">
         <div class="col-md-4">
           <div class="thumbnail">
-            <img alt="Bootstrap Thumbnail First" src="https://images.unsplash.com/uploads/141281662118106b2f121/ad2f351f?q=80&fm=jpg&s=32d3a8e57bc12c61feec8c918a489c1c" />
+            <%= image_tag @dish2.picture.url(:medium)%>
             <div class="caption">
               <h3>
-                Nom de la recette
+                <%= @dish2.name %>
               </h3>
 
               <p>
-                <a class="btn btn-primary" href="#">Commander</a>
+                <a class="btn btn-primary" href="/dishes/2">En savoir plus</a>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="thumbnail">
-            <img alt="Bootstrap Thumbnail Second" src="https://images.unsplash.com/uploads/141281662118106b2f121/ad2f351f?q=80&fm=jpg&s=32d3a8e57bc12c61feec8c918a489c1c" />
+<!--             <img alt="Bootstrap Thumbnail Second" src="https://images.unsplash.com/uploads/141281662118106b2f121/ad2f351f?q=80&fm=jpg&s=32d3a8e57bc12c61feec8c918a489c1c" /> -->
+            <%= image_tag @dish1.picture.url(:medium)%>
             <div class="caption">
               <h3>
-                Nom de la recette
+                <%= @dish1.name %>
               </h3>
 
               <p>
-                <a class="btn btn-primary" href="#">Commander</a>
+                <a class="btn btn-primary" href="/dishes/1">En savoir plus</a>
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="thumbnail">
-            <img alt="Bootstrap Thumbnail Third" src="https://images.unsplash.com/uploads/141281662118106b2f121/ad2f351f?q=80&fm=jpg&s=32d3a8e57bc12c61feec8c918a489c1c" />
+            <%= image_tag @dish3.picture.url(:medium)%>
             <div class="caption">
               <h3>
-               Nom de la recette
+                <%= @dish3.name %>
               </h3>
 
               <p>
-                <a class="btn btn-primary" href="#">Commander</a>
+                <a class="btn btn-primary" href="/dishes/3">En savoir plus</a>
               </p>
             </div>
           </div>
