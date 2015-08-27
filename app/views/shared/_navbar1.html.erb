@@ -1,23 +1,20 @@
-<nav class="navbar-wagon">
-  <div class="container navbar-wagon-container">
-    <div class="row">
-      <div class="col-xs-2">
-       <%= link_to root_path do %>
+
+
+
+          <div class="container-fluid" style='background-color: white'>
+<%= link_to root_path do %>
        <%= image_tag "chalk_circle3.png", width:"85px", id: "logo" %>
        <% end %>
-      </div>
-      <div class="">
+
         <% if user_signed_in? %>
           <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link hidden-xs" do %>
-            <div class="icon-badge-container">
+            <!--<div class="icon-badge-container">
               <i class="fa fa-envelope-o"></i>
               <div class="icon-badge icon-badge-blue">3</div>
-            </div>
+            </div> -->
           <% end %>
-
-          <hr>
           <div class="navbar-wagon-item">
-            <div class="dropdown">
+            <div class="dropdown cta">
 
               <%= image_tag current_user.picture, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
@@ -40,12 +37,11 @@
             </div>
           </div>
         <% else %>
-          <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link cta", id:'login'%>
         <% end %>
-      </div>
-      <div class="col-xs-1">
-        <%= link_to t(".top_call_to_action", default: "Proposer un plat"), new_dish_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
-      </div>
-    </div>
-  </div>
-</nav>
+          <%= link_to t(".top_call_to_action", default: "Proposer un plat"), new_dish_path, class: "navbar-wagon-item navbar-wagon-button btn cta" %>
+
+          </div>
+
+
+
