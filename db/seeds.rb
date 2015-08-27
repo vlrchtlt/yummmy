@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Dish.create(name:"Poulet braisé", user_id: User.first, description:"Le poulet braisé est une des spécialité africaine qui peut être accompagné avec du riz et une sauce, de l’Atiéké, des bananes plantains frits, ou seul avec une sauce tomate pimentée.
+# dish1 = Dish.create!(name:"Poulet braisé", user_id: User.first, description:"Le poulet braisé est une des spécialité africaine qui peut être accompagné avec du riz et une sauce, de l’Atiéké, des bananes plantains frits, ou seul avec une sauce tomate pimentée.
 # Ce poulet a été mariné pendant quelques heures et cuit aux braises Vous allez adorer.", price_per_portion: 4, country:"Togo", picture:"https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/s720x720/11202101_1438754079766245_4817306962650561408_n.jpg?oh=68a916761a1fb98da783ee0818623bc5&oe=566FBC7D")
 # Dish.create(name:"Paëlla spéciale", user_id: User.first, description:"A base de riz et de safran, ce plat aussi savoureux qu'économique se compose d'un mélange de viande et de poissons. Je l'ai cuisiné comme on le fait dans ma région d'origine. Vous verrez c'est délicieux !", price_per_portion: 3.5, country:"Espagne", picture:"https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/s720x720/11390177_1434378686870451_85755855853795958_n.jpg?oh=af8ea051d61d6621f2962f2adf354700&oe=56378227")
 # Dish.create(name:"Bar wot", user_id: User.first, description:"banane, oeuf, riz", price_per_portion: 2, country:"Ethiopie", picture:"https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11149297_1420186654956321_1720056648214399605_n.jpg?oh=309f3b7c696b416b2be82f1b39f7face&oe=566AB22D")

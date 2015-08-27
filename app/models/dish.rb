@@ -6,7 +6,9 @@ class Dish < ActiveRecord::Base
   has_many :orders, through: :portions
 
   has_attached_file :picture,
-    styles: { large: "800x800>", medium: "300x300>", thumb: "100x100>" }
+    styles: { large: "800x800>", medium: "300x300>", thumb: "100x100>" },
+    :storage => :s3,
+                :bucket => ENV['S3_BUCKET_NAME']
 
   validates :name, presence: true
 
