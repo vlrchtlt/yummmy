@@ -1,9 +1,10 @@
 <nav class="navbar-wagon">
   <div class="container navbar-wagon-container">
 
-    <a href="">
-      <%= image_tag "logo1.png", width:"85px" %>
-    </a>
+
+     <%= link_to root_path do %>
+     <%= image_tag "logo1.png", width:"85px", id: "logo" %>
+     <% end %>
 
     <form action="" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="recherche par ingredient">
@@ -46,7 +47,7 @@
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
     <hr>
-    <%= link_to t(".top_call_to_action", default: "Proposer un plat"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
+    <%= link_to t(".top_call_to_action", default: "Proposer un plat"), new_dish_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
     <hr>
   </div>
 </nav>
