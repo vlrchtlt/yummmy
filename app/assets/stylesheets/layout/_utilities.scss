@@ -4,6 +4,12 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
+body {
+  background-image: image-url('blackboard.jpg');
+  background-size:  100%;
+  color: white;
+}
+
 // Paddings
 .padded {
   padding-top: 5em;
@@ -11,6 +17,7 @@
 }
 
 // Backgrounds
+
 .bg-text {
   background: #4a4a4a;
 }
