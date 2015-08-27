@@ -19,7 +19,7 @@ class DishesController < ApplicationController
 
   def create
     @dish = Dish.create(dish_params)
-    redirect_to root_path
+    redirect_to edit_dish_path(@dish)
   end
 
   def edit
