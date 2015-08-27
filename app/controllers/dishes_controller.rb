@@ -14,10 +14,12 @@ class DishesController < ApplicationController
 
   def new
     # NEXT WEEK
+    @dish = Dish.new
   end
 
   def create
-    # NEXT WEEK
+    @dish = Order.create(dish_params)
+    redirect_to root_path
   end
 
   def edit
@@ -36,4 +38,9 @@ class DishesController < ApplicationController
   def set_dish
   @dish = Dish.find(params[:id])
   end
+
+  def order_params
+  params.require(:dish).permit(:name, :description)
+end
+
 end
