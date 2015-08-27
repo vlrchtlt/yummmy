@@ -14,6 +14,15 @@ Dish.create(name:"Couscous-poelée mexicaine", user_id: User.first, description:
 Dish.create(name:"Yassa poulet", user_id: User.first, description:"Poulet, riz, épices", price_per_portion: 2, country:"Sénégal", picture:"https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10437776_1400042640304056_7387559147958877469_n.jpg?oh=de8c200ad78330108a7754f4eac0a602&oe=567FE47F")
 Dish.create(name:"Salade de crudité", user_id: User.first, description:"Carotte, salade, tomate", price_per_portion: 2, country:"France", picture: "https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/11036599_1413471848961135_5856528738371133638_o.jpg")
 
+
+# Dish.create(name:"Poulet braisé", user_id: User.first, description:"Le poulet braisé est une des spécialité africaine qui peut être accompagné avec du riz et une sauce, de l’Atiéké, des bananes plantains frits, ou seul avec une sauce tomate pimentée.
+# Ce poulet a été mariné pendant quelques heures et cuit aux braises Vous allez adorer.", price_per_portion: 4, country:"Togo")
+# Dish.create(name:"Paëlla spéciale", user_id: User.first, description:"A base de riz et de safran, ce plat aussi savoureux qu'économique se compose d'un mélange de viande et de poissons. Je l'ai cuisiné comme on le fait dans ma région d'origine. Vous verrez c'est délicieux !", price_per_portion: 3.5, country:"Espagne")
+# Dish.create(name:"Bar wot", user_id: User.first, description:"banane, oeuf, riz", price_per_portion: 2, country:"Ethiopie")
+# Dish.create(name:"Couscous-poelée mexicaine", user_id: User.first, description:"Riz, poulet, bannane", price_per_portion: 3, country:"Mexique")
+# Dish.create(name:"Yassa poulet", user_id: User.first, description:"Poulet, riz, épices", price_per_portion: 2, country:"Sénégal")
+# Dish.create(name:"Salade de crudité", user_id: User.first, description:"Carotte, salade, tomate", price_per_portion: 2, country:"France")
+
 Ingredient.create(name:"Poulet", dish_id: 1)
 Ingredient.create(name:"Epices", dish_id: 1)
 Ingredient.create(name:"Carotte", dish_id: 3)

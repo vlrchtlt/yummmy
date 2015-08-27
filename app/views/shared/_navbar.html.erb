@@ -1,9 +1,10 @@
 <nav class="navbar-wagon">
   <div class="container navbar-wagon-container">
 
-    <a href="">
-      <%= image_tag "logo1.png", width:"85px" %>
-    </a>
+
+     <%= link_to root_path do %>
+     <%= image_tag "logo1.png", width:"85px", id: "logo" %>
+     <% end %>
 
     <form action="" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="recherche par ingredient">
