@@ -18,7 +18,7 @@ class DishesController < ApplicationController
   end
 
   def create
-    @dish = Order.create(dish_params)
+    @dish = Dish.create(dish_params)
     redirect_to root_path
   end
 
@@ -39,7 +39,7 @@ class DishesController < ApplicationController
   @dish = Dish.find(params[:id])
   end
 
-  def order_params
+  def dish_params
   params.require(:dish).permit(:name, :description)
 end
 

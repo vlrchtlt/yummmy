@@ -5,7 +5,8 @@
   <%= f.error_notification %>
 
   <%= f.input :name, label: 'Votre plat', placeholder: "Poulet braisé" %>
-  <%= f.input :description, label: 'Des commentaires ?' %>
+  <%= f.input :description, label: 'Des commentaires ?', placeholder: "Ingrédients, conseils ?" %>
 
-  <%= f.button :submit, class: "btn btn-primary" %>
+  <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
+
 <% end %>
