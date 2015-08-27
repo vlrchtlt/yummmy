@@ -1,2 +1,12 @@
-<h1>Dishes#new</h1>
-<p>Find me in app/views/dishes/new.html.erb</p>
+<h1>Proposer un plat</h1>
+<br>
+
+<%= simple_form_for(@dish) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name, label: 'Votre plat', placeholder: "Poulet braisé" %>
+  <%= f.input :description, label: 'Des commentaires ?', placeholder: "Ingrédients, conseils ?" %>
+
+  <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
+
+<% end %>
