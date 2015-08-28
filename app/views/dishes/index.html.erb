@@ -1,16 +1,18 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
       <h3 class="text-center">
         ENSEMBLE DES PLATS DISPONIBLES
       </h3>
+      <br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+    <% @dishes.each do |dish| %>
       <div class="row">
         <div class="col-md-4">
           <div class="thumbnail">
             <%= image_tag @dish2.picture.url(:medium)%>
             <div class="caption text-center">
               <h3>
-                <%= @dish2.name %>
+                <%= dish.name %>
               </h3>
 
               <p>
@@ -19,47 +21,4 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <%= image_tag @dish1.picture.url(:medium)%>
-            <div class="caption text-center">
-              <h3>
-                <%= @dish1.name %>
-              </h3>
-
-              <p>
-                <a class="btn btn-primary" href="/dishes/1">En savoir plus</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <%= image_tag @dish3.picture.url(:medium)%>
-            <div class="caption text-center">
-              <h3>
-                <%= @dish3.name %>
-              </h3>
-
-              <p>
-                <a class="btn btn-primary" href="/dishes/3">En savoir plus</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <%= image_tag @dish3.picture.url(:medium)%>
-            <div class="caption text-center">
-              <h3>
-                <%= @dish3.name %>
-              </h3>
-
-              <p>
-                <a class="btn btn-primary" href="/dishes/3">En savoir plus</a>
-              </p>
-            </div>
-      </div>
-    </div>
-  </div>
-</div>
+<% end %>
