@@ -5,20 +5,15 @@
             <%= simple_form_for(@dish) do |f| %>
               <%= f.error_notification %>
               <%= f.input :name, label: 'Nom du plat', placeholder: "Envoyez du rêve !" %>
-              <%= f.input :description, label: 'Description', placeholder: "Faites saliver..." %>
-              <%= f.input :price_per_portion, label: 'Prix de la portion'%>
+              <%= f.input :description, :as => :string, label: 'Description', placeholder: "Faites saliver...", input_html: { rows: "2" } %>
+              <%= f.input :price_per_portion, label: 'Prix de la portion', placeholder: "€€€€€"%>
               <%= f.fields_for @ingredient do |p| %>
                 <% p.input :name, label: "Ingrédients", as: :collection_select, collection: Ingredient.all.map { |i| i.name }.uniq %>
               <% end %>
-
-        <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
-
-
+<!--               <div class="text-center"> -->
+                <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
+<!--               </div> -->
       <% end %>
-
-
-
-
     </div>
   </div>
 </div>
