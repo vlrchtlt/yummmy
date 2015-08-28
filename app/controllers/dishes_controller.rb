@@ -20,6 +20,7 @@ class DishesController < ApplicationController
 
   def create
     @dish = Dish.new(dish_params)
+    @dish.user_id = current_user.id
     if @dish.save
     @ingredient = Ingredient.new(name: ingredient_params[:name], dish_id: Dish.last.id)
     @ingredient.save
@@ -48,7 +49,8 @@ class DishesController < ApplicationController
   end
 
   def dish_params
-    params.require(:dish).permit(:name, :description)
+    params.require(:dish).permit(:name, :description, :price_per_portion)
+    # :user_id current_user
   end
 
   def ingredient_params
