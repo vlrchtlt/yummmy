@@ -3,9 +3,9 @@ class DishesController < ApplicationController
 
   def index
     @dishes = Dish.all
-    @dish1= Dish.find(1)
-    @dish2= Dish.find(2)
-    @dish3= Dish.find(3)
+    # @dish1= Dish.find(1)
+    # @dish2= Dish.find(2)
+    # @dish3= Dish.find(3)
   end
 
   def show
@@ -20,8 +20,9 @@ class DishesController < ApplicationController
 
   def create
     @dish = Dish.new(dish_params)
-    @ingredient = Ingredient.new(ingredient_params)
     if @dish.save
+    @ingredient = Ingredient.new(name: ingredient_params[:name], dish_id: Dish.last.id)
+    @ingredient.save
       redirect_to dish_path(@dish)
     else
       redirect_to new_dish_path(@dish)
@@ -51,7 +52,7 @@ class DishesController < ApplicationController
   end
 
   def ingredient_params
-    params[:dish].require(:ingredient).permit(:name, :dish_id)
+    params[:dish].require(:ingredient).permit(:name)
   end
 
 end
