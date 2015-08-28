@@ -15,6 +15,7 @@ class DishesController < ApplicationController
   def new
     # NEXT WEEK
     @dish = Dish.new
+    @ingredient = Ingredient.new
   end
 
   def create
@@ -40,7 +41,11 @@ class DishesController < ApplicationController
   end
 
   def dish_params
-  params.require(:dish).permit(:name, :description)
-end
+    params.require(:dish).permit(:name, :description)
+  end
+
+  def ingredient_params
+    params[:dish].require(:ingredient).permit(:name)
+  end
 
 end
