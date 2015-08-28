@@ -3,7 +3,7 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
 // Local fonts (uncomment following lines)
 @font-face {
   font-family: "KG_Sketch";
@@ -15,10 +15,10 @@
   src: font-url('KGSecondChancesSolid.ttf') format('truetype');
 }
 
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway";
-$header-font-solid: "KG_Solid";
-$header-font-sketch: "KG_Sketch";
+$base-font: "Shadows Into Light","KG_Sketch", "Open Sans", "Helvetica", "sans-serif";
+$header-font: "Shadows Into Light", "Raleway";
+$header-font-solid: "Shadows Into Light", "KG_Solid";
+$header-font-sketch: "Shadows Into Light", "KG_Sketch";
 
 
 // Font-size and line-height
