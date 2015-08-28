@@ -43,6 +43,28 @@ body {
   background-repeat: no-repeat;
 }
 
+.btn{
+  color: white;
+  display: center-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: none;
+  touch-action: none;
+    cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .btn-default {
   background-color: transparent;
   color: white;
@@ -52,13 +74,13 @@ body {
 
 .btn:hover {
     color: gray;
-    // background: $brand-color;
-    // border-color: darken($brand-color, 10%);
+    background: none;
+    border-color: none;
   }
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 60%;
     height: 80px;
     padding: 6px 29px 20px 40px;
     font-size: 16px;
@@ -84,4 +106,25 @@ body {
     box-shadow: none;
 }
 
-
+.btn{
+  color: white;
+  display: center-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: none;
+  touch-action: none;
+    cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
