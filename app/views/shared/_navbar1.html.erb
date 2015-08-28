@@ -19,7 +19,7 @@
 
               <%= image_tag current_user.picture, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
               <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-                <li>
+<!--                 <li>
                   <%= link_to "#" do %>
                     <i class="fa fa-user"></i> <%= t ".profile", default: "Profile" %>
                   <% end %>
@@ -28,7 +28,7 @@
                   <%= link_to "#" do %>
                     <i class="fa fa-home"></i>  <%= t ".profile", default: "Home" %>
                   <% end %>
-                </li>
+                </li> -->
                 <li>
                   <%= link_to destroy_user_session_path, method: :delete do %>
                     <i class="fa fa-sign-out"></i>  <%= t ".sign_out", default: "Log out" %>
@@ -40,7 +40,12 @@
         <% else %>
           <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link cta", id:'login'%>
         <% end %>
+
+        <% if user_signed_in? %>
           <%= link_to t(".top_call_to_action", default: "Proposer un plat"), new_dish_path, class: "navbar-wagon-item navbar-wagon-button btn cta" %>
+          <% else %>
+
+        <% end %>
 
           </div>
 
