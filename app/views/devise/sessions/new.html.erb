@@ -13,7 +13,7 @@
     <div class="col-md-4">
             <%= simple_form_for(resource, as: resource_name, autofocus: false, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs rectanglechalk">
-          <%= f.input :email, autofocus: false, required: false %>
+          <%= f.input :email, autofocus: false, required: false, cursor: "pointer" %>
         </div>
         <div class="form-inputs rectanglechalk">
           <%= f.input :password, autofocus: false, required: false %>
