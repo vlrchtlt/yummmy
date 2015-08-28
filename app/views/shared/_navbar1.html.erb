@@ -1,10 +1,11 @@
 
 
 
-          <div class="container-fluid" style='background-color: white'>
-<%= link_to root_path do %>
-       <%= image_tag "chalk_circle3.png", width:"85px", id: "logo" %>
-       <% end %>
+<div class="container-fluid">
+
+  <%= link_to root_path do %>
+    <%= image_tag "chalk_circle3.png", width:"70px", id: "logo" %>
+  <% end %>
 
         <% if user_signed_in? %>
           <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link hidden-xs" do %>
