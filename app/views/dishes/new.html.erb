@@ -1,13 +1,22 @@
-<h1>Proposer un plat</h1>
-<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1>Proposer un plat</h1>
+            <%= simple_form_for(@dish) do |f| %>
+        <%= f.error_notification %>
 
-<%= simple_form_for(@dish) do |f| %>
-  <%= f.error_notification %>
+          <%= f.input :name, label: 'Votre plat', placeholder: "Envoyez du rêve ! (max 40 charactères)" %>
+          <%= f.input :description, label: 'Description', placeholder: "Soyez explicite, faites nous saliver ce texte " %>
+        <!--  TODO voir comment les ajouter (ressource nestée + nouveau simple_form ?) <%#= f.input :ingredient, label: 'Ingrédients', placeholder: "Pensez à tous les lister (allergies...)" %> -->
 
-  <%= f.input :name, label: 'Votre plat', placeholder: "Envoyez du rêve ! (max 40 charactères)" %>
-  <%= f.input :description, label: 'Description', placeholder: "Soyez explicite, faites nous saliver ce texte " %>
-<!--  TODO voir comment les ajouter (ressource nestée + nouveau simple_form ?) <%#= f.input :ingredient, label: 'Ingrédients', placeholder: "Pensez à tous les lister (allergies...)" %> -->
+        <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
 
-  <%= f.button :submit, label: "Ajouter votre plat", class: "btn btn-primary" %>
 
-<% end %>
+      <% end %>
+
+
+
+
+    </div>
+  </div>
+</div>
