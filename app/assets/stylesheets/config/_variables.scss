@@ -9,12 +9,12 @@
 // Local fonts (uncomment following lines)
  @font-face {
    font-family: "KG_Sketch";
-   src: font-url('KGSecondChancesSketch.ttf') format('truetype');
+   src: font-url(asset-url('KGSecondChancesSketch.ttf')) format('truetype');
  }
 
  @font-face {
    font-family: "KG_Solid";
-   src: font-url('KGSecondChancesSolid.ttf') format('truetype');
+   src: font-url(asset-url('KGSecondChancesSolid.ttf') format('truetype');
 }
 
 
