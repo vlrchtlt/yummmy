@@ -20,6 +20,7 @@ class DishesController < ApplicationController
 
   def create
     @dish = Dish.new(dish_params)
+    @ingredient = Ingredient.new(ingredient_params)
     if @dish.save
       redirect_to dish_path(@dish)
     else
@@ -50,7 +51,7 @@ class DishesController < ApplicationController
   end
 
   def ingredient_params
-    params[:dish].require(:ingredient).permit(:name)
+    params[:dish].require(:ingredient).permit(:name, :dish_id)
   end
 
 end
