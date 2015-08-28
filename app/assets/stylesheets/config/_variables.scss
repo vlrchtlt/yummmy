@@ -4,21 +4,24 @@
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
 // Local fonts (uncomment following lines)
-@font-face {
-  font-family: "KG_Sketch";
-  src: font-url('KGSecondChancesSketch.ttf') format('truetype');
+ @font-face {
+   font-family: "KG_Sketch";
+   src: font-url('KGSecondChancesSketch.ttf') format('truetype');
+ }
+
+ @font-face {
+   font-family: "KG_Solid";
+   src: font-url('KGSecondChancesSolid.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: "KG_Solid";
-  src: font-url('KGSecondChancesSolid.ttf') format('truetype');
-}
 
-$base-font: "Shadows Into Light","KG_Sketch", "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Shadows Into Light", "Raleway";
-$header-font-solid: "Shadows Into Light", "KG_Solid";
-$header-font-sketch: "Shadows Into Light", "KG_Sketch";
+
+$base-font:"Fredericka the Great", "Open Sans", "Helvetica", "sans-serif";
+$header-font:"Fredericka the Great", "Raleway";
+$header-font-solid:"KG_Solid";
+$header-font-sketch:"Fredericka the Great", "Shadows Into Light", "KG_Sketch";
 
 
 // Font-size and line-height
