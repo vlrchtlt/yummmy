@@ -20,11 +20,12 @@ class DishesController < ApplicationController
 
   def create
     @dish = Dish.create(dish_params)
-    redirect_to edit_dish_path(@dish)
+    redirect_to dish_path(@dish)
   end
 
   def edit
     # NEXT WEEK
+    @dish = Dish.find(params[:id])
   end
 
   def update
