@@ -19,8 +19,12 @@ class DishesController < ApplicationController
   end
 
   def create
-    @dish = Dish.create(dish_params)
-    redirect_to dish_path(@dish)
+    @dish = Dish.new(dish_params)
+    if @dish.save
+      redirect_to dish_path(@dish)
+    else
+      redirect_to new_dish_path(@dish)
+    end
   end
 
   def edit
