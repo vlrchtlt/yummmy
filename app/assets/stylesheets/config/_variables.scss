@@ -5,6 +5,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
 @import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
 // Local fonts (uncomment following lines)
  @font-face {
    font-family: "KG_Sketch";
@@ -18,14 +19,14 @@
 
 
 
-$base-font:"Fredericka the Great", "Open Sans", "Helvetica", "sans-serif";
+$base-font: "Dancing Script", "Shadows Into Light", "Fredericka the Great", "Open Sans", "Helvetica", "sans-serif";
 $header-font:"Fredericka the Great", "Raleway";
 $header-font-solid:"KG_Solid";
 $header-font-sketch:"Fredericka the Great", "Shadows Into Light", "KG_Sketch";
 
 
 // Font-size and line-height
-$base-size: 16px;
+$base-size: 22px;
 $base-height: 1.4;
 
 /* -------------------------------------
