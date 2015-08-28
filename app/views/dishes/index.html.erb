@@ -1,18 +1,16 @@
-      <h1 class="text-center">
-        MENUS DU JOUR
-      </h1>
-      <br><br>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-offset-3 col-xs-6 ">
-    <% @dishes.each do |dish| %>
-      <div class="row">
-        <div class="col-md-10">
+<h1 class="text-center">MENU DU JOUR</h1>
+<br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-6 ">
+      <% @dishes.each do |dish| %>
+        <div class="row">
+          <div class="col-md-10">
 
             <h2><A HREF="/dishes#"><%= link_to dish.name, dish_path(dish) %></A></h2>
 
 
-            <p><%= dish.description %> <h2>7€</h2></p>
+            <p><%= dish.description %> <h2><%= dish.price_per_portion%> €</h2></p>
             <div class="caption text-center">
 
 
@@ -24,4 +22,4 @@
         </div>
 <% end %>
 
-<title>rstrstrstrsrtrs</title>
+
