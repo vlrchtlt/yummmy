@@ -1,4 +1,19 @@
-<h1 class="text-center">MENU DU JOUR</h1>
+
+<br>
+<br><br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class=" col-md-1"></div>
+    <div class=" col-md-10" id="chatwee-widget"></div>
+  </div>
+</div>
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br>
+
+
+<h2 class="text-center">MENU DU JOUR</h2>
 <br><br>
   <div class="container-fluid">
     <div class="row">
@@ -7,10 +22,10 @@
         <div class="row">
           <div class="col-md-10">
 
-            <h2><A HREF="/dishes#"><%= link_to dish.name, dish_path(dish) %></A></h2>
+            <h3><A HREF="/dishes#"><%= link_to dish.name, dish_path(dish) %></A></h3>
 
 
-            <p><%= dish.description %> <h2><%= dish.price_per_portion%> €</h2></p>
+            <p><%= dish.description %> <h3><%= dish.price_per_portion%> €</h3></p>
             <div class="caption text-center">
 
 
@@ -60,7 +75,11 @@
 <p class="text-center"><%= link_to "À propos", about_show_path %></p>
 
 
+
+
    <!--  <%= Dish.first.picture %> -->
 
+<script src="http://repository.chatwee.com/scripts/35925349ec1d09383d04820fc4210063.js" type="text/javascript" charset="UTF-8"></script>
+<br>
 <br>
 <br>
