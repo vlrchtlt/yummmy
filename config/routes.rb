@@ -1,25 +1,27 @@
 Rails.application.routes.draw do
 
 
-  get 'orders/index'
+  # get 'orders/index'
 
-  get 'orders/new'
+  # get 'orders/new'
 
-  get 'orders/show'
+  # get 'orders/show'
 
-  get 'orders/create'
+  # get 'orders/create'
 
-  get 'orders/edit'
+  # get 'orders/edit'
 
-  get 'orders/update'
+  # get 'orders/update'
 
-  get 'orders/destroy'
+  # get 'orders/destroy'
 
-  get 'orders/new'
+  resources :orders
 
-  get 'orders/create'
+  # get 'orders/new'
 
-  get 'orders/show' =>
+  # get 'orders/create'
+
+  # get 'orders/show' =>
 
   # get 'dishes/index'
 
