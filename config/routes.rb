@@ -1,11 +1,29 @@
 Rails.application.routes.draw do
 
 
+  get 'about/show' => 'about#show'
+
+  # get 'orders/index'
+
+  # get 'orders/new'
+
+  # get 'orders/show'
+
+  # get 'orders/create'
+
+  # get 'orders/edit'
+
+  # get 'orders/update'
+
+  # get 'orders/destroy'
+
+  resources :orders
+
   # get 'orders/new'
 
   # get 'orders/create'
 
-  # get 'orders/show'
+  # get 'orders/show' =>
 
   # get 'dishes/index'
 
