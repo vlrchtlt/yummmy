@@ -18,6 +18,9 @@ gem 'simple_form'
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
 
+gem 'activeadmin', github: 'activeadmin'
+
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
