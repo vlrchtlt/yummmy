@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'about/show' => 'about#show'
+
   # get 'orders/index'
 
   # get 'orders/new'
