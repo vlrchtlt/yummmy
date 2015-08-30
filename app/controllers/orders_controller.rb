@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def show
+
     @ingredient = Ingredient.new
   end
 
@@ -19,14 +20,7 @@ class OrdersController < ApplicationController
 
   def create
     @order = Order.new(order_params)
-    @order.user_id = current_user.id
-    if @order.save
-    @ingredient = Ingredient.new(name: ingredient_params[:name], order_id: order.last.id)
-    @ingredient.save
-      redirect_to order_path(@order)
-    else
-      redirect_to new_order_path(@order)
-    end
+    @order.save
   end
 
   def edit
