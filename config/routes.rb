@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'chats/index' => 'chats#index'
+
   ActiveAdmin.routes(self)
   get 'about/show' => 'about#show'
 
